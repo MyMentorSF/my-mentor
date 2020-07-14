@@ -1,16 +1,22 @@
 import React from "react";
-import { AppBar } from "@material-ui/core/";
-import { makeStyles } from "react";
+import "fontsource-roboto";
+import { makeStyles } from "@material-ui/core";
 import "./App.css";
-import { Toolbar } from "@material-ui/core";
+
+import ApplicationBar from "./Components/ApplicationBar";
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: "#f2e7d5",
+    height: "100vh",
+    width: "100vw",
+  },
+}));
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <AppBar style={{ background: "#8c77e6" }}>
-        <Toolbar></Toolbar>
-      </AppBar>
-      <div className="purple">Hey</div>
+    <div className={classes.root}>
+      <ApplicationBar />
     </div>
   );
 }
