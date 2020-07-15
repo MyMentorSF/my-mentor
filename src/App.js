@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100vw",
   },
   mainDisplay: {
+    display: "flex",
     margin: "0px 150px 0px 150px",
   },
 }));

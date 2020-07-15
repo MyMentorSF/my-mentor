@@ -21,10 +21,11 @@ function Dashboard() {
             <Grid item>
               <ProfileCard />
             </Grid>
-            <Grid item>
-              <Calendar />
-            </Grid>
+            <Grid item>{/* <Calendar /> */}</Grid>
           </Grid>
+        </Grid>
+        <Grid item>
+          <Calendar />
         </Grid>
         {/* Insert list of mentors here into another Grid item */}
       </Grid>
